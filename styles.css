@@ -1,0 +1,304 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Adjust for header height */
+  }
+  
+  /* Navbar */
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 1000;
+    padding: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #4a90e2;
+  }
+  
+  nav button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  nav button:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  /* Styling for the logo image */
+.logo-img {
+    max-width: 50px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  /* Home Section */
+  #home {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  #home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: #fff;
+    color: #4a90e2;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .cta-btn:hover {
+    background-color: #4a90e2;
+    color: white;
+    transform: translateY(-3px);
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+  
+  #about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #about .section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-img {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4a90e2;
+  }
+  
+  /* Projects Section */
+  #projects {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+  }
+  
+  #projects .section-title h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .project-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  /* Styling h3 in Projects Section */
+  #projects h3 {
+      font-size: 2rem; /* Adjust font size */
+      color: #333; /* Dark color for readability */
+      font-weight: 700; /* Bold text */
+      text-align: center; /* Center the heading */
+      margin: 20px 0; /* Vertical margin */
+      padding: 10px 0; /* Padding for spacing */
+      letter-spacing: 1px; /* Add space between letters for a clean look */
+      text-transform: capitalize; /* Capitalize each word for clarity */
+      border-bottom: 3px solid #4a90e2; /* Underline with a solid color */
+      transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for h3 */
+  #projects h3:hover {
+      color: #4a90e2; /* Change text color on hover */
+      border-bottom-color: #50e3c2; /* Change underline color on hover */
+      transform: translateY(-3px); /* Slightly lift the heading on hover */
+  }
+  
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+  }
+  
+  .contact-links {
+    text-align: center;
+  }
+  
+  .contact-links p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contact-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-links ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-links ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #4a90e2;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-links ul li a:hover {
+    color: #333;
+    transform: translateY(-5px);
+  }
+  
+  .contact-links ul li a img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Dark Mode */
+  body.dark-theme {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+  }
+  
+  body.dark-theme header {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  body.dark-theme #home {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark-theme .cta-btn {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-theme .cta-btn:hover {
+    background-color: #555;
+  }
+  
+  body.dark-theme #about,
+  body.dark-theme #projects {
+    background-color: #2a2a2a;
+  }
+  
+  body.dark-theme footer {
+    background-color: #111;
+  }
+  
